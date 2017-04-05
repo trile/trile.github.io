@@ -48,11 +48,11 @@ figure#hamburger span {
   display: block;
     position: absolute;
     height: 3px;
-    width: 75%;
+    width: 20px;
     background: #fff;
     border-radius: 9px;
     opacity: 1;
-    left: 4px;
+    left: 5px;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -92,6 +92,7 @@ figure#hamburger span:nth-child(4) {
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
+  top: 14px;
 }
 
 #main-nav.open figure#hamburger span:nth-child(3) {
@@ -99,6 +100,7 @@ figure#hamburger span:nth-child(4) {
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
+  top: 13px;
 }
 
 #main-nav ul {
@@ -106,13 +108,14 @@ figure#hamburger span:nth-child(4) {
   margin-bottom: 0;
   position: fixed;
   background: #fff;
+  min-width: 150px;
   right: 0;
   top: 0;
   bottom: 0;
   border-left: 1px solid #f0f0f0;
-  padding-right: 30px;
-  padding-top: 70px;
-  padding-left: 30px;  
+  margin-right: 25px;
+  padding-top: 75px;
+  margin-left: 25px;  
   list-style-type: none;
   text-align: right;
   transform: translate3d(350px, 0, 0);
@@ -123,6 +126,10 @@ figure#hamburger span:nth-child(4) {
 
 #main-nav.open ul {
   transform: translate3d(0px, 0, 0);
+}
+
+#main-nav ul li {
+  padding: 10px 0px;
 }
 
 #nav-title {
@@ -273,6 +280,25 @@ hr.article-split {
 
   #main-nav {
     border-bottom: 1px solid #f0f0f0;
+  }
+
+  #main-nav ul {
+    margin-right: 10px;
+    padding-top: 60px;
+  }
+
+  figure#hamburger span {
+    left: 4px;
+  }
+
+  #main-nav.open figure#hamburger span:nth-child(2) {
+    top: 13px;
+    left: 4px;
+  }
+
+  #main-nav.open figure#hamburger span:nth-child(3) {
+    top: 14px;
+    left: 4px;
   }
 
   #main-nav.homepage{
