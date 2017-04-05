@@ -1,5 +1,5 @@
 This is the development source for [trile.github.io](https://trile.github.io).
-It is check in as `source` brand in the same respository as the `master` brand is the generated version from Hexo.
+It is checked in as `source` brand in the same respository as the `master` brand is the generated version from Hexo.
 
 Credit:
 [How to setup a blog on github with Hexo](https://zirho.github.io/2016/06/04/hexo/)

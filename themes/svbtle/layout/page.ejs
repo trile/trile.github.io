@@ -1,0 +1,15 @@
+<section>
+  <article class="page">
+    <header>            
+      <% if (page.date) { %>
+        <time datetime="<%=page.date.toJSON()%>"><%=date(page.date)%></time>
+      <% } %>
+      <h1><%=page.title%></h1>
+    </header>
+    <section section class="article-content">
+      <%- page.content %>
+    </section>
+  </article>
+</section>
+
+<%-partial('partials/pagination')%>

@@ -1,0 +1,48 @@
+body {
+  font-family: 'Proxima Nova', 'Helvetica Neue', 'Helvetica', 'Avenir', 'Arial', sans-serif;
+  font-size: 1.1em;
+}
+
+p {
+  color: #4D4D4D;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Freight Sans';
+  font-weight: bold;
+}
+
+a:link, a:visited, a:hover, a:active {
+  transition-property: all;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82);
+  -moz-transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82);
+  -ms-transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82);
+  -o-transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82);
+  transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82);
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+  color: #333;
+}
+
+a:link.button {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82);
+  -webkit-font-smoothing: antialiased;
+  border: 1px solid #e4e4e4;
+  padding: 7px 20px;
+  border-radius: 30px;
+  color: #767676;
+  font-size: .8em;
+}
+
+a:hover.button {
+  color: #fff;
+  border: 1px solid #008AFF;
+  background-color: #008AFF;
+}
+
+

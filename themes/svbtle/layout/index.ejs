@@ -1,0 +1,32 @@
+<header id="home-header">
+  <div id="logo-large"></div>
+  <h1><%= config.author %></h1>
+</header>
+
+<h4 class="separator_title read_first">Read&nbsp;this&nbsp;first</h6>
+
+<section id='post-container' class="user-home">
+  <% if (site.posts.length > 0) { %>
+    <% site.posts.sort('date', -1).limit(10).each(function(post) { %>
+      <article class="post">
+        <header>            
+          <% if (post.date) { %>
+            <!-- <time datetime="<%=post.date.toJSON()%>"><%=date(post.date)%></time> -->
+            <time datetime="<%=post.date.toJSON()%>"><%=post.date.format("ll") %></time>
+          <% } %>
+          <h1 class="article-title">
+            <a href="<%- url_for(post.path) %>"><%- post.title%></a>
+          </h1>
+        </header>
+        <section class="article-content">
+            <%- post.content %>
+        </section>
+          <footer><p class="continue_mark"><a href="<%- url_for(post.path) %>" class="button small">Continue reading →</a></p>
+        </footer>
+      </article>
+      <hr class="article-split" />
+    <% }); %>
+  <% } %>
+
+  <%-partial('partials/pagination')%>
+</section>

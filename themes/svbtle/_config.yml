@@ -1,0 +1,19 @@
+
+# html lang
+language: en
+
+# main menu navigation
+menu:
+  Home: /
+  Resume: /resume
+
+# Miscelaneous
+favicon: /favicon.ico
+
+# stylesheets loaded in the <head>
+stylesheets:
+- /css/svbtle.css
+
+# scripts loaded in the end of the body
+scripts:
+- /js/svbtle.js

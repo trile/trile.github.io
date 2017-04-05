@@ -1,0 +1,118 @@
+---
+title: resume
+date: 2017-04-02 08:27:20
+---
+
+<div class="resume">
+    <section class="name-card">
+        <div class="name-title">
+            <h1 class="name">Tri Le</h1>
+            <h3 class="career">Product Manager - Software Engineer</h3>
+        </div>
+        <div class="contact-info">
+            28 Nam Quoc Cang, District 1 <br> Ho Chi Minh, Vietnam <br> Phone: (+84) 98 244 7987 <br> Email: tri.cao.le@gmail.com <br>
+        </div>
+        <div class="clear"></div>
+    </section>
+
+    <section class="education">
+        <h2>Education</h2>
+        <div class="school"><span class="school-name">University of California San Diego </span>- B.S. Computer Science - 2007</div>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Product development and management.</li>
+            <li>Java, Python, C, and C++ in UNIX and Windows environment.</li>
+            <li>Web development with HTML5, CSS, JavaScript, NodeJs.</li>
+            <li>Mobile app development and deployments.</li>
+            <li>Web design with Sketch.</li>
+            <li>Windows, UNIX/LINUX and Mac OS with administration experiences.</li>
+        </ul>
+    </section>
+
+    <section class="experiences">
+        <h2>Experiences</h2>
+        <div class="workplace">
+            <div class="position"><span class="company">Webtretho (backed by IDGVV) - Ho Chi Minh City, Vietnam </span>- Product Manager</div>
+            <div class="time-period">Sep 2012 - Jul 2016</div>
+            <div class="job-description">
+                <ul>
+                    <li>Directly reported to CEO.</li>
+                    <li>Helped organize company structure and source new recruitments.</li>
+                    <li>Updated and refined crossed functional team processes and communications.</li>
+                    <li>Manage cross-functional teams to develop and maintain products. These activities included analyzing, researching and developing product strategies, collecting user feedbacks, managing community forums and events, creating
+                        new contents, and developing and promoting new features and products (website and apps) for users. </li>
+                    <li>Managed products: User Feedback and Complaint, E-commerce and Media Integration, Mom and Kid Portal, Search Engine Optimization, Homepage, and Forum Mobile Web.</li>
+                    <li>Refined various product documents such as Community Guideline and Term of Services.</li>
+                    <li>Helped acquired social network license from Ministry of Information and Communication.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="workplace">
+            <div class="position"><span class="company">IDG Venture Vietnam - Ho Chi Minh City, Vietnam </span><span class="title">- Senior Investment Analyst</span></div>
+            <div class="time-period">Apr 2010 - Aug 2012</div>
+            <div class="job-description">
+                <ul>
+                    <li>Researched and analyzed product and service companies in technology sector.</li>
+                    <li>Provided information and recommendation on investments.</li>
+                    <li>Supported investment due diligence process.</li>
+                    <li>Worked with portfolio managers on product, strategy, business development and funding.</li>
+                    <li>Reported and updated portfolio statuses to upper Managers and Partners.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="workplace">
+            <div class="position"><span class="company">East Agile - Ho Chi Minh City, Vietnam </span><span class="title">- Software engineering</span></div>
+            <div class="time-period">Aug 2009 - Mar 2012</div>
+            <div class="job-description">
+                <ul>
+                    <li>Developed iPhone and Ruby on Rails applications for clients in San Francisco.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="workplace">
+            <div class="position"><span class="company">Vusion Inc. - San Jose, CA </span><span class="title">- Software Engineer</span></div>
+            <div class="time-period">Mar 2008 - May 2009</div>
+            <div class="job-description">
+                <ul>
+                    <li>Integrated Rhozet, a third party transcoding farm into Vusion video management system (VMS). Set up, monitored and measured performance video transcoding systems. Handled customized transcoding requests and hold training
+                        sections for customers and partners in transcoding related topics.</li>
+                    <li>Designed and developed an automated, scalable video and audio transcoding system. Written entirely in Python, the Vusion transcoding system retrieved jobs from MySql database, evaluate properties of input video files, determine
+                        transcoding profile for each input, create XML job templates to produce thumbnails, video and audio in Vusion format, flash and H.264 streams. The system fed XML files to Rhozet to start transcoding. During this process,
+                        progress for each job was reported to the customers. Result video and audio streams got encrypted with Vusion tools and the VMS was notified through the database. The system also logged customer transcoding usage as
+                        well as monitoring transcoding load. Two or more transcoding systems can be run concurrently to ensure service uptime and scalable capacity.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="workplace">
+            <div class="position"><span class="company">East Agile - Ho Chi Minh City, Vietnam </span><span class="title">- Software engineering</span></div>
+            <div class="time-period">Aug 2009 - Mar 2012</div>
+            <div class="job-description">
+                <ul>
+                    <li>Applied RAID, SCSI knowledge to create and enhance test suite for Dot Hill’s storage technologies.</li>
+                    <li>Developed performance-measuring software for RAID arrays.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="workplace">
+            <div class="position"><span class="company">UCSD - San Diego, CA </span><span class="title">- Teacher Assistant for Data Structures and OO Design class</span></div>
+            <div class="time-period">Jan 2009 - Dec 2012</div>
+            <div class="job-description">
+                <ul>
+                    <li>Assisted students in programming assignments using C, C++, and Java, data structure, algorithm concepts and Object-Oriented Design.</li>
+                    <li>Helped students improve their skills in using gdb, IDE debuggers and Purify profiler.</li>
+                    <li>Evaluated programming submissions by running automated grading software, designed test cases to exercise homework requirements and assisted other tutors in resolving technical problems.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="download">
+        <div>
+            <a class="btn" href="https://github.com/trile/trile.github.io/raw/master/Tri%20Le%20-%20Resume.pdf">Download</a>
+        </div>
+    </section>
+</div>
+

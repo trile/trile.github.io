@@ -8,6 +8,7 @@ subtitle:
 description:
 author: Tri Le
 language:
+  - en
 timezone:
 
 # URL
@@ -38,10 +39,7 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
-  line_number: true
-  auto_detect: false
-  tab_replace:
+  enable: false
 
 # Category & Tag
 default_category: uncategorized
@@ -62,8 +60,13 @@ pagination_dir: page
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+prism_plugin:
+  mode: 'preprocess'    # realtime/preprocess
+  theme: 'okaidia'
+  line_number: false    # default false
+
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: svbtle
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -71,3 +74,5 @@ deploy:
   type: git
   repository: https://github.com/trile/trile.github.io.git
   branch: master
+
+

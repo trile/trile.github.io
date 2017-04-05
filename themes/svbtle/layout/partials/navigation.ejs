@@ -1,0 +1,28 @@
+<nav id="main-nav" class="<%= is_home() ? 'homepage' : '' %>">
+  <a href="#menu" id="hamburger_button">
+    <figure id="logo-small">
+    </figure>    
+  </a>
+  
+  <figure id="hamburger">
+    <!-- <a href="#menu" id="hamburger_button">Menu</a> -->
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </figure>
+  <% if (!is_home()) { %>
+      <h1 id="nav-title">
+        <a href="/">
+        <%= config.author %>
+        </a>
+      </h1>
+  <% } %>
+  <ul>
+    <% Object.keys(theme.menu).forEach(function(key) { %>
+      <li>
+      <a href="<%=theme.menu[key]%>"><%=key%></a>
+      </li>
+    <% }); %>
+  </ul>
+</nav>
