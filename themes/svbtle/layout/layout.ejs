@@ -20,6 +20,9 @@ pageTitle += ' [ ' + config.title + ' ]';
       <link rel="stylesheet" href="<%=url%>">
     <% }); %>
   <% } %>
+  <% if (url_for(page.path) === '/resume/index.html') { %>
+    <link rel="stylesheet" href="/css/resume.css">
+  <% } %>
 </head>
 <body>
 

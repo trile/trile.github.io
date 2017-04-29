@@ -6,48 +6,50 @@ Credit:
 
 To set up development, clone source as a single brand.
 
-```commandline
-git clone -b source --single-branch https://github.com/trile/trile.github.io.git trile.github.io.hexo
+```bash
+> git clone -b source --single-branch https://github.com/trile/trile.github.io.git trile.github.io.hexo
 ```
 
 Create a new post
 
-```commandline
-$ hexo new "My new post"
+```bash
+> hexo new "My new post"
 ```
 
 Run dev server
 
-```commandline
-$ hexo server
+```bash
+> hexo server
 ```
 
 Generate statis file
 
-```commandline
-$ hexo generate
+```bash
+> hexo generate
 ```
 
 Deploy to remote sites
 
-```commandline
-$ hexo deploy
+```bash
+> hexo deploy
 ```
 
 Or generate and run in one command
 
-```commandline
-$ hexo generate -d
+```bash
+> hexo generate -d
 ```
 
 Add a theme
 
-```
-$ git submodule add {theme-github-url} themes/{theme-name}
+```bash
+> git submodule add {theme-github-url} themes/{theme-name}
 ```
 
 Copy _config.yml.example to _config.yml
 
-```commandline
-$ cp themes/{theme-name}/_config.yml.example themes/{theme-name}/_config.yml
+```bash
+> cp themes/{theme-name}/_config.yml.example themes/{theme-name}/_config.yml
 ```
+
+More information can be obtain at [Hexo documentation](https://hexo.io/docs/)

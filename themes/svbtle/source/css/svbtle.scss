@@ -221,11 +221,17 @@ article > header > h1 > a:hover {
   color: #008AFF;
 }
 
+article img {
+  width: 90%;
+}
+
 .article-content {
   margin-bottom: 20px;
 }
 
-section.article-content a:link {
+section.article-content a:link,
+section.article-content a:visited,
+ {
   border-bottom: 2px solid #e1e1e1;
 }
 
@@ -237,8 +243,18 @@ section.article-content a:hover {
   margin-top: 130px;
 }
 
+#page-container {
+  margin-top: 130px;
+}
+
 #post-container.user-home {
   margin-top: 30px;
+}
+
+article.page {
+  max-width: 600px;
+  padding: 0 10px;
+  margin: auto;
 }
 
 article.post {
@@ -266,6 +282,12 @@ hr.article-split {
   max-width: 600px;
   color: #4D4D4D;
   -webkit-font-smoothing: antialiased;
+  padding: 0 10px;
+}
+
+span.katex-display {
+  overflow: auto;
+  padding: .8em 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -297,7 +319,7 @@ hr.article-split {
   }
 
   #main-nav.open figure#hamburger span:nth-child(3) {
-    top: 14px;
+    top: 13px;
     left: 4px;
   }
 
