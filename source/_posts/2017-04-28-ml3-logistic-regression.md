@@ -63,7 +63,7 @@ $$
 
 **Vectorized form:**
 $$
-J_{(\theta)} = -\frac{1}{m}(-y^Tlog(sigmoid(X\theta)) - (1-y^T)log(1-sigmoid(X\theta)))
+J_{(\theta)} = \frac{1}{m}(-y^Tlog(sigmoid(X\theta)) - (1-y^T)log(1-sigmoid(X\theta)))
 $$
 
 We need to get the parameter $\theta$ where $J_{(\theta)}$ is min. Then we can make a prediction when given new $x$ using
@@ -105,7 +105,7 @@ Repeat
 $$
 \begin{aligned}
 \theta_0 &:= \theta_0 - \alpha \frac{1}{m} \sum_{i=1}^{m} \left( h_\theta ( x^{(i)} ) - y^{(i)} \right) x_0^{\left(i\right)} \\
-\theta_j &:= \theta_j - \alpha \frac{1}{m} \left[ \left( \sum_{i=1}^{m} \left( h_\theta ( x^{(i)} ) - y^{(i)} \right) x^{\left(i\right)} \right) + \frac{\lambda}{m}\theta_i \right] \quad j \in 1, 2, ..., n
+\theta_j &:= \theta_j - \alpha  \left[ \left( \frac{1}{m} \sum_{i=1}^{m} \left( h_\theta ( x^{(i)} ) - y^{(i)} \right) x^{\left(i\right)} \right) + \frac{\lambda}{m}\theta_j \right] \quad \textrm{for} \quad j \geq 1
 \end{aligned}
 $$
 }
