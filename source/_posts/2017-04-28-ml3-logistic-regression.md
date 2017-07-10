@@ -16,16 +16,25 @@ From linear regression $ h_\theta(x) = \theta^TX$ We need to choose hypothesis f
 ### 1. Hypothesis function
 
 $$
-\begin{aligned}
-h_\theta(x) & = g(\theta^TX) \quad \textrm{for} \quad g(z) = \frac{1}{1 + e^{-z}} \\
-& = \frac{1}{1 + e^{-\theta^TX}}
-\end{aligned}
+h_\theta(x) = g(\sum_{i=0}^{n}\theta_ix_i) \quad \textrm{for} \quad g(z) = \frac{1}{1 + e^{-z}}
 $$
 
+**Notes: Octave implementation of sigmoid function**
+```matlab
+g = 1 ./ ( 1 + e .^ (-z));
+```
+
 **Vectorized form:**
+Since $\sum_{i=0}^{n}\theta_ix_i = \theta^TX$. The vectorized form of $h_\theta(x)$ is
+
 $$
-  sigmoid(\theta^TX)
+  \frac{1}{1 + e^{-\theta^TX}} \quad \textrm{or} \quad sigmoid(\theta^TX)
 $$
+
+**Octave implementation**
+```matlab
+h = sigmoid(theta' *  X)
+```
 
 ![Logistic Regression](/images/logistic_regression_sigmoid.png)
 
@@ -66,6 +75,12 @@ $$
 J_{(\theta)} = \frac{1}{m}(-y^Tlog(sigmoid(X\theta)) - (1-y^T)log(1-sigmoid(X\theta)))
 $$
 
+**Code in Octave to compute cost function**
+
+```matlab
+J = (1/m) * ( -y' * log(sigmoid(X*theta) ) - (1-y') * log(1-sigmoid(X*theta)) );
+```
+
 We need to get the parameter $\theta$ where $J_{(\theta)}$ is min. Then we can make a prediction when given new $x$ using
 $$
 h_\theta(x) = \frac{1}{1 + e^{-\theta^TX}}
@@ -90,6 +105,12 @@ $$
    \theta := \theta - \frac{\alpha}{m} \left( X^T (sigmoid(X\theta) - \vec{y}) \right)
 $$
 
+**Code in Octave to compute gradient step $\frac {\partial }{\partial \theta_j}J(\theta)$**
+
+```matlab
+grad = (1 / m) * (X' * (sigmoid( X * theta) - y) );
+```
+
 ### 4. Adding Regularization parameter
 **Regularized cost function:**
 $$
@@ -98,6 +119,11 @@ $$
 
 The second sum, $\sum_{j=1}^{n}\theta_j^2$ means to explicitly exclude the bias term, $\theta_0$. I.e. the $\theta$ vector is indexed from 0 to n (holding n+1 values, $\theta_0$ through $\theta_n$), and this sum explicitly skips $\theta_0$, by running from 1 to n, skipping 0.
 
+**Octave code to compute cost function with regularization**
+```matlab
+J = (1/m) * (-y' * log(sigmoid(X*theta)) - (1-y')*log(1-sigmoid(X*theta))) + lambda/(2*m)*sum(theta(2:end).^2);
+```
+
 Thus, when computing the equation, we should continuously update the two following equations:
 **Regularized Gradient Descent:**
 Repeat
@@ -105,15 +131,19 @@ Repeat
 $$
 \begin{aligned}
 \theta_0 &:= \theta_0 - \alpha \frac{1}{m} \sum_{i=1}^{m} \left( h_\theta ( x^{(i)} ) - y^{(i)} \right) x_0^{\left(i\right)} \\
-\theta_j &:= \theta_j - \alpha  \left[ \left( \frac{1}{m} \sum_{i=1}^{m} \left( h_\theta ( x^{(i)} ) - y^{(i)} \right) x^{\left(i\right)} \right) + \frac{\lambda}{m}\theta_j \right] \quad \textrm{for} \quad j \geq 1
+\theta_j &:= \theta_j - \alpha  \left[ \left(\frac{1}{m} \sum_{i=1}^{m} \left( h_\theta ( x^{(i)} ) - y^{(i)} \right) x^{\left(i\right)} \right) + \frac{\lambda}{m}\theta_j \right] \quad \textrm{for} \quad j \geq 1
 \end{aligned}
 $$
 }
 
-### 5. Pseudocode in Octave
-*(To be filled in)*
+**Octave code to compute gradient step $\frac {\partial }{\partial \theta_j}J(\theta)$**
+```matlab
+grad = (1 / m) * (X' * (sigmoid( X * theta) - y)) + (lambda/m)*[0; theta(2:end)];
+```
 
-### 6. Advanced Optimization
+Notice that we dont add the regularization term for $\theta_0$
+
+### 5. Advanced Optimization
 Prepare a function that can compute $J_{(\theta)}$ and $\frac {\partial }{\partial \theta_j}J(\theta)$ for a given $\theta$
 
 ```matlab
@@ -124,7 +154,7 @@ end
 ```
 
 
-Then with this function Octave can provide us some advanced algorithms to compute min of $J_{(\theta)}$. We should not implement these below algorithms by ourselves.
+Then with this function Octave can provide us some advanced algorithms to compute min of $J_{(\theta)}$. We should not impletment these below algorithms by ourselves.
 
 - Conjugate gradient
 - BFGS
@@ -137,7 +167,6 @@ initialTheta = zeros(2,1);
 ```
 
 We give to the function ```fminunc()``` our cost function, our initial vector of theta values, and the ```options``` object that we created beforehand.
-
 
 **Advantages:**
 No need to pick up $\alpha$.
