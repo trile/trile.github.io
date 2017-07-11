@@ -75,4 +75,3 @@ deploy:
   type: git
   repository: https://github.com/trile/trile.github.io.git
   branch: master
-  message: "Site updated: {{ now ('YYYY-MM-DD HH:mm:ss') }}
