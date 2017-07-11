@@ -7,7 +7,7 @@ Credit:
 To set up development, clone source as a single brand.
 
 ```bash
-> git clone -b source --single-branch https://github.com/trile/trile.github.io.git trile.github.io.hexo
+> git clone -b source https://github.com/trile/trile.github.io.git trile.github.io.hexo
 ```
 
 Create a new post
