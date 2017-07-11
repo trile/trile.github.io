@@ -141,7 +141,7 @@ $$
 grad = (1 / m) * (X' * (sigmoid( X * theta) - y)) + (lambda/m)*[0; theta(2:end)];
 ```
 
-Notice that we dont add the regularization term for $\theta_0$
+Notice that we don't add the regularization term for $\theta_0$
 
 ### 5. Advanced Optimization
 Prepare a function that can compute $J_{(\theta)}$ and $\frac {\partial }{\partial \theta_j}J(\theta)$ for a given $\theta$
@@ -154,7 +154,7 @@ end
 ```
 
 
-Then with this function Octave can provide us some advanced algorithms to compute min of $J_{(\theta)}$. We should not impletment these below algorithms by ourselves.
+Then with this function Octave can provide us some advanced algorithms to compute min of $J_{(\theta)}$. We should not implement these below algorithms by ourselves.
 
 - Conjugate gradient
 - BFGS

@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.2.2"
+    "version": "3.3.7"
   },
   "dependencies": {
     "hexo": "^3.2.0",
@@ -20,8 +20,7 @@
     "hexo-renderer-marked": "^0.2.10",
     "hexo-renderer-sass": "^0.3.1",
     "hexo-renderer-stylus": "^0.3.1",
-    "hexo-simple-katex": "^0.0.1",
     "hexo-server": "^0.2.0",
-    "katex": "^0.7.1"
+    "hexo-simple-katex": "^1.0.0"
   }
 }
