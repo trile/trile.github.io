@@ -1,0 +1,110 @@
+/*
+    Gray scale
+    ========
+    black:        #000
+    gray-darker:  #111
+    gray-dark:    #333
+    gray:         #555
+    gray-light:   #777
+    gray-lighter: #eee
+    white:        #fff
+*/
+body {
+  color: #4d4d4d; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #0d0d0d; }
+
+.clear {
+  clear: both; }
+
+#page-container {
+  margin-top: 100px; }
+
+h1#nav-title {
+  display: none; }
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 700; }
+
+section.name-card,
+section.education,
+section.skills,
+section.experiences {
+  margin-bottom: 40px; }
+
+section.name-card {
+  margin-top: 10px; }
+
+.name-title {
+  float: left;
+  padding-right: 20px; }
+
+.name-title h1.name {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-top: 0; }
+
+h3.career {
+  font-weight: 500; }
+
+.contact-info {
+  margin-top: 3px;
+  float: right;
+  line-height: 1.25em;
+  font-size: .9em; }
+
+span.degree:before,
+span.title:before {
+  content: " - "; }
+
+.skills ul {
+  margin-left: 0px;
+  line-height: 1.4em; }
+
+.experiences ul {
+  line-height: 1.4em; }
+
+.position, .school {
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 5px;
+  color: #2d2d2d; }
+
+span.company, span.school-name {
+  font-weight: 600;
+  font-style: normal;
+  font-family: 'Freight Sans'; }
+
+.workplace {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.time-period {
+  font-size: .8em;
+  text-transform: uppercase; }
+
+section.download {
+  text-align: center;
+  margin-bottom: 50px; }
+
+@media (max-width: 767px) {
+  .name-title {
+    float: none; }
+  h1.name {
+    font-size: 31px;
+    font-weight: 600; }
+  .contact-info {
+    float: none;
+    font-size: 1em; }
+  span.degree:before,
+  span.title:before {
+    content: ""; }
+  span.degree,
+  span.title {
+    display: block;
+    margin-top: 5px; }
+  ul, ol {
+    padding-left: 17px; } }
