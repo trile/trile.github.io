@@ -44,7 +44,7 @@ When $sigmoid(\theta^TX) \geq 0.5$ then we decide $y=1$. As we know $sigmoid(\th
 
 So for $y=1$ , $\theta^TX \geq 0$. We call $\theta^TX$ is the line that define the **Decision boundary** that separate the area where $y=0$ and $y=1$. It does not need to be linear since X can contain polynomial term.
 
-Decision boundary is the property of the hypothesis and paramter $\theta$, not of the training set
+Decision boundary is the property of the hypothesis and parameter $\theta$, not of the training set
 
 ### 2. The cost function
 We need to choose the cost function so that it is "convex" toward one single global minimum
