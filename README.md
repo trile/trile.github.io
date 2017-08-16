@@ -17,11 +17,6 @@ If you want to push to source do:
 git push origin source
 ```
 
-Make sure you set git push default to current
-```bash
-> git config --global push.default current
-```
-
 Create a new post
 
 ```bash
