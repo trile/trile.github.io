@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.3.7"
+    "version": "3.3.8"
   },
   "dependencies": {
     "hexo": "^3.2.0",
@@ -13,9 +13,8 @@
     "hexo-generator-index": "^0.2.0",
     "hexo-generator-json-content": "^3.0.1",
     "hexo-generator-tag": "^0.2.0",
-    "hexo-prism-plugin": "^2.0.2",
-    "hexo-renderer-ejs": "^0.2.0",
-    "hexo-renderer-jade": "^0.3.0",
+    "hexo-prism-plugin": "https://github.com/trile/hexo-prism-plugin/tarball/master",
+    "hexo-renderer-ejs": "^0.3.0",
     "hexo-renderer-less": "^0.2.0",
     "hexo-renderer-marked": "^0.2.10",
     "hexo-renderer-sass": "^0.3.1",
