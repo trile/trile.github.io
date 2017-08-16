@@ -12,10 +12,12 @@ To set up development, clone source as a single brand.
 > git clone -b source https://github.com/trile/trile.github.io.git trile.github.io.hexo
 ```
 
-If you want to push to source do:
+Make sure you set git push default to current or simple before you do a push
 ```bash
-git push origin source
+> git config --global push.default current
 ```
+
+More info on push.default [here](https://git-scm.com/docs/git-config#git-config-pushdefault)
 
 Create a new post
 
