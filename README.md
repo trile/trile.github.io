@@ -12,11 +12,6 @@ To set up development, clone source as a single brand.
 > git clone -b source https://github.com/trile/trile.github.io.git trile.github.io.hexo
 ```
 
-If you want to push to source do:
-```bash
-git push origin source
-```
-
 Create a new post
 
 ```bash
